@@ -1,0 +1,85 @@
+{
+	"common": {
+		"name": "automation",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"zh-cn": "首次出版"
+			}
+		},
+		"title": "Automation",
+		"titleLang": {
+			"en": "Automation",
+			"de": "Automatisierung",
+			"ru": "автоматизация",
+			"pt": "Automação",
+			"nl": "Automatisering",
+			"fr": "Automatisation",
+			"it": "Automazione",
+			"es": "Automatización",
+			"pl": "Automatyzacja",
+			"zh-cn": "自动化"
+		},
+		"desc": {
+			"en": "automation",
+			"de": "Automatisierung",
+			"ru": "автоматизация",
+			"pt": "automação",
+			"nl": "automatisering",
+			"fr": "automatisation",
+			"it": "automazione",
+			"es": "automatización",
+			"pl": "automatyzacja",
+			"zh-cn": "自动化"
+		},
+		"authors": [
+			"walli546 <walli5446@gmail.com>"
+		],
+		"keywords": [
+			"ioBroker",
+			"template",
+			"Smart Home",
+			"home automation"
+		],
+		"license": "MIT",
+		"platform": "Javascript/Node.js",
+		"main": "build/main.js",
+		"icon": "automation.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/walli546/ioBroker.automation/master/admin/automation.png",
+		"readme": "https://github.com/walli546/ioBroker.automation/blob/master/README.md",
+		"loglevel": "info",
+		"restartAdapters": [
+			"vis"
+		],
+		"localLink": "%web_protocol%://%ip%:%web_port%/vis/edit.html",
+		"mode": "daemon",
+		"type": "logic",
+		"compact": true,
+		"materialize": true,
+		"dependencies": [
+			{
+				"admin": ">=3.0.0"
+			},
+			{
+				"js-controller": ">=1.4.2"
+			},
+			"vis"
+		]
+	},
+	"native": {
+		"option1": true,
+		"option2": "42"
+	},
+	"objects": [],
+	"instanceObjects": []
+}
