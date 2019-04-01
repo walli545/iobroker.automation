@@ -20,12 +20,12 @@ Describe your project here
 ## Changelog
 
 ### 0.0.1
-* (walli546) initial release
+* (walli545) initial release
 
 ## License
 MIT License
 
-Copyright (c) 2019 walli546
+Copyright (c) 2019 walli545
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

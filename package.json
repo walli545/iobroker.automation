@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "description": "automation",
   "author": {
-    "name": "walli546",
+    "name": "walli545",
     "email": "walli5446@gmail.com"
   },
-  "homepage": "https://github.com/walli546/ioBroker.automation",
+  "homepage": "https://github.com/walli545/ioBroker.automation",
   "license": "MIT",
   "keywords": [
     "ioBroker",
@@ -16,7 +16,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/walli546/ioBroker.automation"
+    "url": "https://github.com/walli545/ioBroker.automation"
   },
   "dependencies": {
     "@iobroker/adapter-core": "^1.0.3"
@@ -83,7 +83,7 @@
     "instrument": true
   },
   "bugs": {
-    "url": "https://github.com/walli546/ioBroker.automation/issues"
+    "url": "https://github.com/walli545/ioBroker.automation/issues"
   },
   "readmeFilename": "README.md"
 }

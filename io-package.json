@@ -42,7 +42,7 @@
 			"zh-cn": "自动化"
 		},
 		"authors": [
-			"walli546 <walli5446@gmail.com>"
+			"walli545 <walli5446@gmail.com>"
 		],
 		"keywords": [
 			"ioBroker",
@@ -56,7 +56,7 @@
 		"icon": "automation.png",
 		"enabled": true,
 		"extIcon": "https://raw.githubusercontent.com/walli546/ioBroker.automation/master/admin/automation.png",
-		"readme": "https://github.com/walli546/ioBroker.automation/blob/master/README.md",
+		"readme": "https://github.com/walli545/ioBroker.automation/blob/master/README.md",
 		"loglevel": "info",
 		"restartAdapters": [
 			"vis"
