@@ -4,7 +4,11 @@
 		"tslint:recommended"
 	],
 	"rules": {
-		"indent": [true, "tabs", 4],
+      "indent": [
+        true,
+        "spaces",
+        4
+      ],
 		"object-literal-sort-keys": false,
 		"object-literal-shorthand": false,
 		"array-type": [true, "array"],
@@ -22,6 +26,10 @@
 		"no-bitwise": false,
 		"max-classes-per-file": false,
 		"quotemark": [true, "single", "avoid-escape"],
-		"no-console": true
+      "no-console": true,
+      "align": [
+        false,
+        "parameters"
+      ]
 	}
 }
