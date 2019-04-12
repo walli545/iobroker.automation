@@ -1,5 +1,9 @@
-export interface StateService {
-	getState(id: string): Promise<ioBroker.State>;
+import {StateId} from '../devices/StateId';
 
-	setState(id: string, state: string | number | boolean): void;
+export interface StateService {
+    getState(id: StateId): Promise<ioBroker.State>;
+
+    setState(id: StateId, state: string | number | boolean): void;
+
+    getValue<T = number | boolean | string>(id: StateId): Promise<T>;
 }
