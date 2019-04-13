@@ -5,7 +5,7 @@ import {StateService} from '../../../interfaces/services/StateService';
 import {HmDevice} from '../HmDevice';
 
 /**
- * Resembles a homematic weather sensor.
+ * A homematic weather sensor.
  */
 export class HmWeatherSensor extends HmDevice implements WeatherSensor {
     private ids: WeatherSensorStateIds;
