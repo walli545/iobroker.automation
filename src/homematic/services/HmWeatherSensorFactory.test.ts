@@ -21,7 +21,7 @@ describe('HmWeatherSensorFactory', () => {
             const stateService = Mock.of<StateService>();
             const factory = new HmWeatherSensorFactory(stateService);
 
-            factory.id = new HmDeviceId();
+            factory.id = new HmDeviceId('NEQ1100467');
             factory.room = null;
 
             expect(factory.create()).to.be.equal(null);
@@ -31,7 +31,7 @@ describe('HmWeatherSensorFactory', () => {
             const stateService = Mock.of<StateService>();
             const factory = new HmWeatherSensorFactory(stateService);
 
-            factory.id = new HmDeviceId();
+            factory.id = new HmDeviceId('NEQ1100467');
             factory.room = '';
 
             expect(factory.create()).to.be.equal(null);
@@ -40,7 +40,7 @@ describe('HmWeatherSensorFactory', () => {
         it('should create correct WeatherSensor', () => {
             const stateService = Mock.of<StateService>();
             const factory = new HmWeatherSensorFactory(stateService);
-            const id = new HmDeviceId('hm-rpc', 0);
+            const id = new HmDeviceId('NEQ1100467', 'hm-rpc', 0);
             factory.id = id;
             factory.room = 'WG';
 

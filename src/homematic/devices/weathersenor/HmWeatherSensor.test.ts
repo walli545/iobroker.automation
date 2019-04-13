@@ -7,7 +7,6 @@ import {StateService} from '../../../interfaces/services/StateService';
 import {HmDeviceId} from '../HmDeviceId';
 import {HmStateId} from '../HmStateId';
 import {HmWeatherSensor} from './HmWeatherSensor';
-import {HmWeatherSensorStateIds} from './HmWeatherSensorStateIds';
 import sinon = require('sinon');
 
 describe('HmWeatherSensor', () => {
@@ -16,17 +15,17 @@ describe('HmWeatherSensor', () => {
     let id: DeviceId;
 
     beforeEach(() => {
-        id = new HmDeviceId();
-        ids = new HmWeatherSensorStateIds(
-            new HmStateId(id, 1, 'BRIGHTNESS'),
-            new HmStateId(id, 1, 'BRIGHTNESS'),
-            new HmStateId(id, 1, 'RAIN_TOTAL'),
-            new HmStateId(id, 1, 'HUMIDITY'),
-            new HmStateId(id, 1, 'RAINING'),
-            new HmStateId(id, 1, 'TEMPERATURE'),
-            new HmStateId(id, 1, 'WIND_DIRECTION'),
-            new HmStateId(id, 1, 'WIND_SPEED'),
-        );
+        id = new HmDeviceId('NEQ1100467');
+        ids = {
+            brightness: new HmStateId(id, 1, 'BRIGHTNESS'),
+            downfallTotal: new HmStateId(id, 1, 'RAIN_TOTAL'),
+            windDirection: new HmStateId(id, 1, 'WIND_DIRECTION'),
+            windSpeed: new HmStateId(id, 1, 'WIND_SPEED'),
+            temperature: new HmStateId(id, 1, 'TEMPERATURE'),
+            raining: new HmStateId(id, 1, 'RAINING'),
+            humidity: new HmStateId(id, 1, 'HUMIDITY'),
+            downfallToday: new HmStateId(id, 1, 'RAIN_TODAY'),
+        };
     });
 
     describe('ctor', () => {

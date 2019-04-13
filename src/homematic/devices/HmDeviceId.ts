@@ -9,20 +9,27 @@ export class HmDeviceId implements DeviceId {
 
     private readonly _instance: number;
 
+    private readonly _name: string;
+
     /**
      * Creates a new device id.
+     * @param name  The name of the device.
      * @param adapter The adapter used in ioBroker.
      * @param instance The instance number in ioBroker.
      */
-    constructor(adapter: string = 'hm-rpc', instance: number = 0) {
+    constructor(name: string, adapter: string = 'hm-rpc', instance: number = 0) {
         if (!adapter) {
             throw new Error('adapter may not be empty, null or undefined');
         }
         if (instance < 0) {
             throw new Error('instance may not be negative');
         }
+        if (!name) {
+            throw new Error('name may not be empty, null or undefined');
+        }
         this._adapter = adapter;
         this._instance = instance;
+        this._name = name;
     }
 
     /**
@@ -42,10 +49,18 @@ export class HmDeviceId implements DeviceId {
     }
 
     /**
+     * Gets the name of the device.
+     * @return Device name.
+     */
+    public get name(): string {
+        return this._name;
+    }
+
+    /**
      * Gets the full id of the device.
      * @return Full id as string.
      */
     public get(): string {
-        return `${this.adapter}.${this.instance}`;
+        return `${this.adapter}.${this.instance}.${this.name}`;
     }
 }
