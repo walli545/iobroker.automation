@@ -44,4 +44,13 @@ describe('HmStateId', () => {
             });
         });
     });
+
+    describe('isForeign', () => {
+        it('isForeign is always true', () => {
+            const devId = new HmDeviceId('NEQ1100467');
+            const id = new HmStateId(devId, 0, 'LEVEL');
+
+            expect(id.isForeign()).be.true;
+        });
+    });
 });

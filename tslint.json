@@ -1,7 +1,8 @@
 {
 	"enable": true,
 	"extends": [
-		"tslint:recommended"
+      "tslint:recommended",
+      "tslint-no-unused-expression-chai"
 	],
 	"rules": {
       "indent": [

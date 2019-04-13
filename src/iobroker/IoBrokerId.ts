@@ -51,4 +51,8 @@ export class IoBrokerId implements StateId {
         return result;
     }
 
+    public isForeign(): boolean {
+        return true;
+    }
+
 }

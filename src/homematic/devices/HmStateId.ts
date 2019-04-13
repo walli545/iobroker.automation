@@ -65,4 +65,12 @@ export class HmStateId implements StateId {
     public get(): string {
         return `${this.deviceId.get()}.${this.channel}.${this.state}`;
     }
+
+    /**
+     * Indicates whether the state is from own module or foreign.
+     * @return Always true.
+     */
+    public isForeign(): boolean {
+        return true;
+    }
 }
