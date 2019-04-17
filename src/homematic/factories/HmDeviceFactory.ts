@@ -4,7 +4,7 @@ import {DeviceFactory} from '../../interfaces/services/DeviceFactory';
 import {StateService} from '../../interfaces/services/StateService';
 
 /**
- * Source abstract {@link DeviceFactory} to create homematic devices.
+ * Abstract {@link DeviceFactory} to create homematic devices.
  */
 export abstract class HmDeviceFactory implements DeviceFactory {
     private _id: DeviceId | null;
