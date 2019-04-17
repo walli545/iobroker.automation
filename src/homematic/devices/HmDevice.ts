@@ -18,6 +18,15 @@ export abstract class HmDevice implements Device {
      *  its state values.
      */
     protected constructor(id: DeviceId, room: string, protected readonly stateService: StateService) {
+        if (!id) {
+            throw new Error('deviceId may not be undefined');
+        }
+        if (!room) {
+            throw new Error('room may not be undefined/empty');
+        }
+        if (!stateService) {
+            throw new Error('stateService may not be undefined');
+        }
         this._id = id;
         this._room = room;
     }
