@@ -1,5 +1,5 @@
 import {expect} from 'chai';
-import {IoBrokerId} from './IoBrokerId';
+import {IoBrokerId} from '../../src/iobroker/IoBrokerId';
 
 describe('IoBroker: StateId', () => {
     describe('get', () => {

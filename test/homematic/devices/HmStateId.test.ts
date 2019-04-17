@@ -1,6 +1,6 @@
 import {expect} from 'chai';
-import {HmDeviceId} from './HmDeviceId';
-import {HmStateId} from './HmStateId';
+import {HmDeviceId} from '../../../src/homematic/devices/HmDeviceId';
+import {HmStateId} from '../../../src/homematic/devices/HmStateId';
 
 describe('HmStateId', () => {
     describe('ctor', () => {

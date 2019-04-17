@@ -1,9 +1,9 @@
 import {expect} from 'chai';
 import {Mock} from 'ts-mockery';
-import {WeatherSensor} from '../../interfaces/devices/weathersensor/WeatherSensor';
-import {StateService} from '../../interfaces/services/StateService';
-import {HmDeviceId} from '../devices/HmDeviceId';
-import {HmWeatherSensorFactory} from './HmWeatherSensorFactory';
+import {HmDeviceId} from '../../../../src/homematic/devices/HmDeviceId';
+import {HmWeatherSensorFactory} from '../../../../src/homematic/factories/HmWeatherSensorFactory';
+import {WeatherSensor} from '../../../../src/interfaces/devices/weathersensor/WeatherSensor';
+import {StateService} from '../../../../src/interfaces/services/StateService';
 
 describe('HmWeatherSensorFactory', () => {
     describe('create', () => {
