@@ -16,10 +16,4 @@ export interface TrackableBlind extends Blind {
      * @param level The new last level in percent (0-100).
      */
     setLastLevel(level: number): void;
-
-    /**
-     * Indicates whether the blind moved down.
-     * @return True if the blinds last move was downwards.
-     */
-    movedDown(): Promise<boolean>;
 }

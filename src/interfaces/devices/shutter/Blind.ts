@@ -8,8 +8,9 @@ export interface Blind extends RollerShutter {
     /**
      * Sets the orientation of the blades.
      * @param orientation The new orientation.
+     * @param delay Delay in ms.
      */
-    setBladeOrientation(orientation: BladeOrientation): void;
+    setBladeOrientation(orientation: BladeOrientation, delay?: number): void;
 
     /**
      * Gets the current orientation of the blades.
