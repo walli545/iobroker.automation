@@ -24,7 +24,7 @@ describe('HmDeviceId', () => {
             expect(() => new HmDeviceId('NEQ1100467', 'hm-rpc', -10)).to.throw();
         });
         it('should throw when name is empty', () => {
-            expect(() => new HmDeviceId('', 'hm-rpc', -1)).to.throw();
+            expect(() => new HmDeviceId('', 'hm-rpc', 1)).to.throw();
         });
     });
 

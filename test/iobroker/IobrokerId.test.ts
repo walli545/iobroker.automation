@@ -32,4 +32,11 @@ describe('IoBroker: StateId', () => {
             expect(() => new IoBrokerId('hm-rpc', -5, 'LEVEL')).to.throw();
         });
     });
+
+    describe('isForeign', function() {
+        it('should return true', function() {
+            const id = new IoBrokerId('hm-rpc', 0, 'LEVEL');
+            expect(id.isForeign()).to.be.true;
+        });
+    });
 });

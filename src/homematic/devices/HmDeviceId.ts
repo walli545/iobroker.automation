@@ -18,9 +18,6 @@ export class HmDeviceId implements DeviceId {
      * @param instance The instance number in ioBroker.
      */
     constructor(name: string, adapter: string = 'hm-rpc', instance: number = 0) {
-        if (!adapter) {
-            throw new Error('adapter may not be empty, null or undefined');
-        }
         if (instance < 0) {
             throw new Error('instance may not be negative');
         }
