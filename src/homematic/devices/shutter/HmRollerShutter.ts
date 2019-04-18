@@ -14,12 +14,12 @@ export class HmRollerShutter extends HmDevice implements RollerShutter {
     /**
      * Max level of the shutter. Shutter is fully open.
      */
-    private readonly MAX_LEVEL = 100;
+    protected readonly MAX_LEVEL = 100;
 
     /**
      * Min level of the shutter. Shutter is fully closed.
      */
-    private readonly MIN_LEVEL = 0;
+    protected readonly MIN_LEVEL = 0;
 
     constructor(id: DeviceId, room: string, stateService: StateService, ids: RollerShutterStateIds) {
         super(id, room, stateService);
